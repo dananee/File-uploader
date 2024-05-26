@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File List</title>
+</head>
+<body>
+    <h2>File List</h2>
+    <ul>
+        {% for file in files %}
+        <li>{{ file.name }} - {{ file.upload_date }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
